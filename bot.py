@@ -1,5 +1,6 @@
 import requests
 import time
+from datetime import datetime
 
 
 class Bot:
@@ -28,6 +29,6 @@ class Bot:
 if __name__ == '__main__':
     Bot.initialize()
     for i in range(10):
-        Bot.send_message('\r\n' + 'call no.='+str(i))
+        Bot.send_message('\r\n' + 'dt='+str(datetime.now())+', call no.='+str(i))
         time.sleep(10)
 

@@ -12,5 +12,7 @@ send pw / token data via filezilla to VPS
 docker buid -t bot .
 docker run bot
 
-
+docker stop [container id]
+docker rm [container id]
+docker rmi bot
 
